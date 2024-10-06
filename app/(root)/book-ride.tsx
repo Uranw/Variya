@@ -57,14 +57,14 @@ const BookRide = () => {
             <View className="flex flex-row items-center justify-between w-full border-b border-white py-3">
               <Text className="text-lg font-JakartaRegular">Ride Price</Text>
               <Text className="text-lg font-JakartaRegular text-[#0CC25F]">
-                Rs{driverDetails?.price}
+                Rs. {driverDetails?.price}
               </Text>
             </View>
 
             <View className="flex flex-row items-center justify-between w-full border-b border-white py-3">
               <Text className="text-lg font-JakartaRegular">Pickup Time</Text>
               <Text className="text-lg font-JakartaRegular">
-                {formatTime(driverDetails?.time!)}
+                {formatTime(parseInt(`${driverDetails.time}`))}
               </Text>
             </View>
 
