@@ -21,6 +21,8 @@ import { useFetch } from "@/lib/fetch";
 import { useLocationStore } from "@/store";
 import { Ride } from "@/types/type";
 
+
+
 const Home = () => {
   const { user } = useUser();
   const { signOut } = useAuth();
